@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <div id="demo">
+      
+    </div>
+    <script >
+    fetch("http://192.168.43.40:3600", (data, error)=>{
+if(error){
+    console.log(error);
+}
+else{
+    var demo = document.getElementById("demo");
+    demo.innerHTML += data;
+   
+}
+
+    });
+    </script>
+
+</body>
+</html>
